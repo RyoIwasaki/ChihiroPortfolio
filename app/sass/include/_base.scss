@@ -15,15 +15,19 @@ body {
 	margin: 40px auto;
 }
 
+
+.index {
+	position: relative;
+
 /*
  * title
  *
  ************************/
 h1 {
-	width: 144px;
-	height: 20px;
+	width: 101px;
+	height: 15px;
 	margin: 20px 14px;
-	background: url(/images/logo.png) no-repeat;
+	background: url(../images/logo.png) no-repeat;
 	text-indent:100%;
 	white-space:nowrap;
 	overflow:hidden;
@@ -33,9 +37,33 @@ h1 {
  * content
  *
  ************************/
- .wrapperMain {
- 	width: 100%;
- 	height: 400px;
- 	display: block;
-	background-color: silver;
- }
+.wrapperMain {
+	width: 100%;
+	height: 717px;
+	display: block;
+	background: url(../images/index_background.jpg) no-repeat;
+
+	.mainImage {
+		width: 762px;
+		height: 770px;
+		background: url(../images/index_flower.png) no-repeat;
+		margin: 0 auto;
+		display: block;
+	}
+}
+
+ /*
+ * decoration
+ *
+ ************************/
+.mainImageString {
+	width: 725px;
+	height: 29px;
+	background: url(../images/index_flower_line.png) repeat-y;
+	display: inline-block;
+	position: absolute;
+	top: -40px;
+	left: 137px;
+}
+
+}//index

@@ -22,34 +22,64 @@ body
     margin: 40px auto;
 }
 
-/*
- * title
- *
- ************************/
-h1
+.index
+{
+    position: relative;
+    /*
+   * title
+   *
+   ************************/
+    /*
+   * content
+   *
+   ************************/
+    /*
+  * decoration
+  *
+  ************************/
+}
+.index h1
 {
     overflow: hidden;
 
-    width: 144px;
-    height: 20px;
+    width: 101px;
+    height: 15px;
     margin: 20px 14px;
 
     white-space: nowrap;
     text-indent: 100%;
 
-    background: url(/images/logo.png) no-repeat;
+    background: url(../images/logo.png) no-repeat;
 }
-
-/*
- * content
- *
- ************************/
-.wrapperMain
+.index .wrapperMain
 {
     display: block;
 
     width: 100%;
-    height: 400px;
+    height: 717px;
 
-    background-color: silver;
+    background: url(../images/index_background.jpg) no-repeat;
+}
+.index .wrapperMain .mainImage
+{
+    display: block;
+
+    width: 762px;
+    height: 770px;
+    margin: 0 auto;
+
+    background: url(../images/index_flower.png) no-repeat;
+}
+.index .mainImageString
+{
+    position: absolute;
+    top: -40px;
+    left: 137px;
+
+    display: inline-block;
+
+    width: 725px;
+    height: 29px;
+
+    background: url(../images/index_flower_line.png) repeat-y;
 }
