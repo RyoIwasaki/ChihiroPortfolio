@@ -6,11 +6,12 @@
  ************************/
 
 body {
-	background-color: #fcfaf8;
+	//background-color: #fcfaf8;
+	background: url(../images/linedpaper.png);
 }
 
 .wrapper {
-	height: 100px;
+	height: auto;
 	width: 1000px;
 	margin: 40px auto;
 }
@@ -24,13 +25,10 @@ body {
  *
  ************************/
 h1 {
-	width: 101px;
-	height: 15px;
-	margin: 20px 14px;
-	background: url(../images/logo.png) no-repeat;
-	text-indent:100%;
-	white-space:nowrap;
-	overflow:hidden;
+	font-size: 120%;
+	font-family: 'Droid Serif', serif;
+	font-weight: 400;
+	letter-spacing: 2px;
 }
 
 /*
@@ -41,7 +39,7 @@ h1 {
 	width: 100%;
 	height: 717px;
 	display: block;
-	background: url(../images/index_background.jpg) no-repeat;
+	//background: url(../images/index_background.jpg) no-repeat;
 
 	.mainImage {
 		width: 762px;
@@ -58,7 +56,7 @@ h1 {
  ************************/
 .mainImageString {
 	width: 725px;
-	height: 29px;
+	height: 60px;
 	background: url(../images/index_flower_line.png) repeat-y;
 	display: inline-block;
 	position: absolute;
