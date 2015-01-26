@@ -1,3 +1,7 @@
+/* lastUpdated:26-01-2015 */
+
+(function( win, doc, undefined ){
+
 var Hash 			= location.hash.slice(1);
 	wHeight 		= $(window).height(),
 	indexString 	= true;
@@ -138,3 +142,5 @@ displayChangeFunc = function(data){
 	}
 
 }//displayChangeFunc
+
+})( window, document );

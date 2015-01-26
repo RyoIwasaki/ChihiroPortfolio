@@ -1,8 +1,8 @@
 <!doctype html>
 
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if IE 7]>	<html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>	<html class="no-js lt-ie9" lang="en"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
 <meta charset="utf-8">
@@ -40,17 +40,28 @@ _win.location.href = '';
 <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
-<div class="wrapper index">
-	<div class="mainImageString"></div>
-	<h1>CHIHIRO</h1>
-	<div class="wrapperMain">
-		<div class="mainImage"></div>
+<div id="loader-bg">
+	<div id="loader">
+		<img src="/images/loading.gif" width="48" height="48" alt="Now Loading..." />
+		<p>Now Loading...</p>
 	</div>
-</div><!-- wrapper -->
+</div>
+<div id="index" class="wrapper">
+	<h1>CHIHIRO</h1>
+	<div class="indexImageString"></div>
+	<div class="indexImage displayChange" data-display="profile"></div>
+</div><!-- index -->
+
+<div id="profile" class="wrapper">
+	<h1>CHIHIRO</h1>
+	<p class="displayChange" data-display="index">戻るよ</p>
+</div><!-- profile -->
+
 <!-- bower:js -->
 <script src="bower_components/modernizr/modernizr.js"></script>
 <script src="bower_components/jquery/jquery.js"></script>
+<script src="bower_components/jquery.easing/js/jquery.easing.js"></script>
 <!-- endbower -->
-<script src="scripts/main.js"></script>
+<script src="scripts/common.js"></script>
 </body>
 </html>

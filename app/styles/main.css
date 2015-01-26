@@ -5,6 +5,7 @@
  * 
  ************************/
 @import url(http://fonts.googleapis.com/css?family=Droid+Serif:400,700);
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
 /************************
  *
  * base
@@ -13,33 +14,56 @@
  ************************/
 body
 {
+    font-family: 'Noto Sans Japanese', serif;
+
     background: url(../images/linedpaper.png);
+}
+
+#loader-bg
+{
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+
+    display: none;
+
+    width: 100%;
+    height: 100%;
+}
+#loader-bg #loader
+{
+    position: fixed;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+
+    display: none;
+
+    width: 200px;
+    height: 200px;
+    margin-top: -100px;
+    margin-left: -100px;
+
+    text-align: center;
+
+    color: #fff;
 }
 
 .wrapper
 {
+    display: none;
+
     width: 1000px;
     height: auto;
     margin: 40px auto;
 }
 
-.index
+#index
 {
     position: relative;
-    /*
-   * title
-   *
-   ************************/
-    /*
-   * content
-   *
-   ************************/
-    /*
-  * decoration
-  *
-  ************************/
 }
-.index h1
+#index h1
 {
     font-family: 'Droid Serif', serif;
     font-size: 120%;
@@ -47,27 +71,22 @@ body
 
     letter-spacing: 2px;
 }
-.index .wrapperMain
+#index .indexImage
 {
+    display: block;
     display: block;
 
     width: 100%;
-    height: 717px;
-}
-.index .wrapperMain .mainImage
-{
-    display: block;
-
     width: 762px;
     height: 770px;
     margin: 0 auto;
 
     background: url(../images/index_flower.png) no-repeat;
 }
-.index .mainImageString
+#index .indexImageString
 {
     position: absolute;
-    top: -40px;
+    top: -41px;
     left: 137px;
 
     display: inline-block;
@@ -76,4 +95,9 @@ body
     height: 60px;
 
     background: url(../images/index_flower_line.png) repeat-y;
+}
+
+#profile
+{
+    display: none;
 }

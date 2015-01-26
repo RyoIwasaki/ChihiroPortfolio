@@ -96,7 +96,7 @@ module.exports = function(grunt) {
             },
             dist : {
                 src : ['<%= config.app %>/scripts/main.js'],
-                dest : '<%= config.app %>/scripts/orijinal.js'
+                dest : '<%= config.app %>/scripts/common.js'
             }
         },
 
@@ -105,8 +105,8 @@ module.exports = function(grunt) {
                 drop_console: true
             },
             build : {
-                src : '<%= config.app %>/scripts/orijinal.js',
-                dest : '<%= config.app %>/scripts/orijinal.js'
+                src : '<%= config.app %>/scripts/common.js',
+                dest : '<%= config.app %>/scripts/common.js'
             }
         },
 
